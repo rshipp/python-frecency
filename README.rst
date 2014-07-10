@@ -14,7 +14,7 @@ Frecency
    :target: https://pypi.python.org/pypi/frecency
    :alt: PyPi Version
 
-A Pythonic library for computing weight using a frecency algorithm.
+A Pythonic library for computing weight using a frecency_ algorithm.
 
 Installation
 ------------
@@ -29,4 +29,5 @@ want a quick start::
 
     >>> import frecency
 
+.. _frecency: https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Frecency_algorithm
 .. _ReadTheDocs: http://frecency.readthedocs.org/en/latest/

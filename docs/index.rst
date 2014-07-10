@@ -24,19 +24,19 @@ References
 
 .. [*] Connor, Mike. "PlacesFrecency." User:Mconnor/Past/PlacesFrecency - MozillaWiki.
    N.p., 19 Nov. 2010. Web. 10 July 2014.
-   <https://wiki.mozilla.org/User:Mconnor/PlacesFrecency>.
+   <`<https://wiki.mozilla.org/User:Mconnor/PlacesFrecency>`_>.
 
 .. [*] Mozilla Wiki Contributors, "Frecency algorithm." Mozilla Developer Network.
    N.p., 27 May 2014. Web. 10 July 2014.
-   <https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Frecency_algorithm>.
+   <`<https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Frecency_algorithm>`_>.
 
 .. [*] Ruderman, Jesse. "NewFrecency." User:Jesse/NewFrecency - MozillaWiki. N.p.,
    22 May 2014. Web. 10 July 2014.
-   <https://wiki.mozilla.org/User:Jesse/NewFrecency>.
+   <`<https://wiki.mozilla.org/User:Jesse/NewFrecency>`_>.
 
 .. [*] Spitzer, Seth. "GlobalFrecency." User:Sspitzer/GlobalFrecency - MozillaWiki.
    N.p., 17 Jan. 2008. Web. 10 July 2014.
-   <https://wiki.mozilla.org/User:Sspitzer/GlobalFrecency>.
+   <`<https://wiki.mozilla.org/User:Sspitzer/GlobalFrecency>`_>.
 
 
 Indices and tables
@@ -47,9 +47,6 @@ Indices and tables
 * :ref:`search`
 
 .. _algorithm: https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Frecency_algorithm
-
 .. _PlacesFrecency: https://wiki.mozilla.org/User:Mconnor/PlacesFrecency
-
 .. _NewFrecency: https://wiki.mozilla.org/User:Jesse/NewFrecency
-
 .. _GlobalFrecency: https://wiki.mozilla.org/User:Sspitzer/GlobalFrecency

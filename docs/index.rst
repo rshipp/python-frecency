@@ -47,3 +47,9 @@ Indices and tables
 * :ref:`search`
 
 .. _algorithm: https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Frecency_algorithm
+
+.. _PlacesFrecency: https://wiki.mozilla.org/User:Mconnor/PlacesFrecency
+
+.. _NewFrecency: https://wiki.mozilla.org/User:Jesse/NewFrecency
+
+.. _GlobalFrecency: https://wiki.mozilla.org/User:Sspitzer/GlobalFrecency

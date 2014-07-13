@@ -9,4 +9,4 @@ def score_item(recencies, time_constant):
     :param time_constant: a number that should not be less than or equal
                           to zero, unless you want strange results
     """
-    return sum((math.exp(-r / time_constant) for r in recencies))
+    return sum(math.exp(-r / time_constant) for r in recencies)

@@ -17,7 +17,7 @@ to give arbitrary objects an absolute weight.
 Functions
 ---------
 
-
+.. autofunction:: frecency.score_item
 
 References
 ----------

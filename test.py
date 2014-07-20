@@ -28,4 +28,8 @@ class TestFrecency(unittest.TestCase):
         pass
 
     def test_zero_time_constant_raises_exception(self):
-        pass
+        self.assertRaises(ZeroDivisionError, frecency.score_item, [50, 30], 0)
+        self.assertRaises(ZeroDivisionError, frecency.score_item, [50, -30], 0)
+        self.assertRaises(ZeroDivisionError, frecency.score_item, [-50, 30], 0)
+        self.assertRaises(ZeroDivisionError, frecency.score_item, [0, 0], 0)
+        self.assertRaises(ZeroDivisionError, frecency.score_item, [50], 0)

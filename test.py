@@ -50,3 +50,18 @@ class TestScoreItem(unittest.TestCase):
         self.assertRaises(ZeroDivisionError, frecency.score_item, [-50, 30], 0)
         self.assertRaises(ZeroDivisionError, frecency.score_item, [0, 0], 0)
         self.assertRaises(ZeroDivisionError, frecency.score_item, [50], 0)
+
+
+class TestScoreItems(unittest.TestCase):
+
+    def test_correct_order(self):
+        pass
+
+    def test_raises_error_on_invalid_input(self):
+        pass
+
+    def test_empty_dict_returns_empty_dict(self):
+        pass
+
+    def test_empty_recencies_list_returns_zero(self):
+        pass

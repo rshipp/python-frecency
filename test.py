@@ -7,6 +7,13 @@ class TestFrecency(unittest.TestCase):
         self.assertAlmostEquals(2.955684590875269,
                 frecency.score_item([50, 30, 600, 200], 600),
                 places=10)
+         self.assertAlmostEquals(2.3168950227541245,
+                frecency.score_item([50, 30.4, 200], 330),
+                places=10)
+        self.assertAlmostEquals(0.2865047968601901,
+                frecency.score_item([500], 400),
+                places=10)
+ 
 
     def test_raises_error_on_invalid_input(self):
         self.assertRaises(TypeError, frecency.score_item, [50, 30], "string")

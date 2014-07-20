@@ -29,4 +29,3 @@ class TestFrecency(unittest.TestCase):
 
     def test_zero_time_constant_raises_exception(self):
         pass
-

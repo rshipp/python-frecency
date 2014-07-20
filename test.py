@@ -9,7 +9,12 @@ class TestFrecency(unittest.TestCase):
                 places=10)
 
     def test_raises_error_on_invalid_input(self):
-        pass
+        self.assertRaises(TypeError, frecency.score_item, [50, 30], "string")
+        self.assertRaises(TypeError, frecency.score_item, 10, 600)
+        self.assertRaises(TypeError, frecency.score_item, ["hi"], 600)
+        self.assertRaises(TypeError, frecency.score_item, "string", 600)
+        self.assertRaises(TypeError, frecency.score_item, "string", "string")
+        self.assertRaises(TypeError, frecency.score_item, ["string"], "string")
 
     def test_empty_list_returns_none(self):
         pass

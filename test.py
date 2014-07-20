@@ -16,8 +16,11 @@ class TestFrecency(unittest.TestCase):
         self.assertRaises(TypeError, frecency.score_item, "string", "string")
         self.assertRaises(TypeError, frecency.score_item, ["string"], "string")
 
-    def test_empty_list_returns_none(self):
-        pass
+    def test_empty_list_returns_zero(self):
+        self.assertEquals(0, frecency.score_item([], 600))
+        self.assertEquals(0, frecency.score_item([], 10.2))
+        self.assertEquals(0, frecency.score_item([], 0))
+        self.assertEquals(0, frecency.score_item([], -600))
 
     def test_negative_recency_works(self):
         pass

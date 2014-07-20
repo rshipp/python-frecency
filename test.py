@@ -1,7 +1,7 @@
 import unittest
 import frecency
 
-class TestFrecency(unittest.TestCase):
+class TestScoreItem(unittest.TestCase):
 
     def test_weight_assigned_correctly(self):
         self.assertAlmostEquals(2.955684590875269,
@@ -13,7 +13,6 @@ class TestFrecency(unittest.TestCase):
         self.assertAlmostEquals(0.2865047968601901,
                 frecency.score_item([500], 400),
                 places=10)
- 
 
     def test_raises_error_on_invalid_input(self):
         self.assertRaises(TypeError, frecency.score_item, [50, 30], "string")

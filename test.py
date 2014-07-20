@@ -25,7 +25,18 @@ class TestFrecency(unittest.TestCase):
         self.assertEquals(0, frecency.score_item([], -600))
 
     def test_negative_recency_works(self):
-        pass
+        self.assertAlmostEquals(5.859195364518158,
+                frecency.score_item([50,-10,60,200,-500],600),
+                places=10)
+        self.assertAlmostEquals(6.804121392023058,
+                frecency.score_item([-300,12,-72.5,120,-50],300),
+                places=10)
+        self.assertAlmostEquals(1.9477340410546757,
+                frecency.score_item([-200],300),
+                places=10)
+        self.assertAlmostEquals(6.905469613962053,
+                frecency.score_item([-50,-10,-60,-200,-500],600),
+                places=10)
 
     def test_zero_time_constant_raises_exception(self):
         self.assertRaises(ZeroDivisionError, frecency.score_item, [50, 30], 0)

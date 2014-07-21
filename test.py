@@ -106,7 +106,12 @@ class TestScoreItems(unittest.TestCase):
         self.assertRaises(TypeError, frecency.score_items, {1:[1]}, "test")
 
     def test_empty_dict_returns_empty_dict(self):
-        pass
+        self.assertEquals({}, frecency.score_items({}, 600))
+        self.assertEquals({}, frecency.score_items({}, 0))
+        self.assertEquals({}, frecency.score_items({}, -5))
 
     def test_empty_recencies_list_returns_zero(self):
-        pass
+        self.assertEquals({3: 0}, frecency.score_items({3: []}, 600))
+        self.assertEquals(0, frecency.score_items({1: [2], 3: []},
+                    600)[3])
+        self.assertEquals({2: 0}, frecency.score_items({2: []}, 0))

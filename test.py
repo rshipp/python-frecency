@@ -115,3 +115,26 @@ class TestScoreItems(unittest.TestCase):
         self.assertEquals(0, frecency.score_items({1: [2], 3: []},
                     600)[3])
         self.assertEquals({2: 0}, frecency.score_items({2: []}, 0))
+
+    def test_function_parameter(self):
+        def test_function(recencies, time_constant):
+            return 1
+        output1 = {
+            'site1': 1,
+            'site2': 1,
+            'site3': 1,
+            'site4': 1,
+        }
+        output2 = {
+            2: 1,
+            1: 1,
+        }
+        output3 = {
+            'site2': 1,
+        }
+        self.assertEquals(output1, frecency.score_items(self.input1,
+                    600, test_function))
+        self.assertEquals(output2, frecency.score_items(self.input2,
+                    600, test_function))
+        self.assertEquals(output3, frecency.score_items(self.input3,
+                    600, test_function))

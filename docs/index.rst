@@ -18,6 +18,7 @@ Functions
 ---------
 
 .. autofunction:: frecency.score_item
+.. autofunction:: frecency.score_items
 
 References
 ----------

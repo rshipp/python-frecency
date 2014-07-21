@@ -14,5 +14,7 @@ def score_items(items, time_constant, score_function=score_item):
 
     :param items: a dictionary of id: recencies pairs
     :param time_constant: numeric constant, should be >0 in most cases
+    :param score_function: function matching the signature of
+                           score_item used to score individual items
     """
     return {k: score_function(v, time_constant) for k, v in items.items()}

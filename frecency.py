@@ -9,7 +9,7 @@ def score_item(recencies, time_constant):
     """
     return sum(math.exp(-r / time_constant) for r in recencies)
 
-def score_items(items, time_constant, score_function=score_item):
+def score_items(items, time_constant, score_function=None):
     """Calculates the absolute score for all items given.
 
     :param items: a dictionary of id: recencies pairs
@@ -17,4 +17,4 @@ def score_items(items, time_constant, score_function=score_item):
     :param score_function: function matching the signature of
                            score_item used to score individual items
     """
-    return {k: score_function(v, time_constant) for k, v in items.items()}
+    return {k: (score_function or score_item)(v, time_constant) for k, v in items.items()}

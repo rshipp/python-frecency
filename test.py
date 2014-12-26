@@ -100,7 +100,7 @@ class TestScoreItems(unittest.TestCase):
         self.assertEquals(1, len(output))
 
     def test_raises_error_on_invalid_input(self):
-        self.assertRaises(AttributeError, frecency.score_items, "test", 600)
+        self.assertRaises(ValueError, frecency.score_items, "test", 600)
         self.assertRaises(TypeError, frecency.score_items, {1:"test"}, 600)
         self.assertRaises(TypeError, frecency.score_items, {1:1}, 600)
         self.assertRaises(TypeError, frecency.score_items, {1:[1]}, "test")
